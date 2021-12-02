@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<body style="padding: 20px;">
+    please fill out and submit this inventory form
+   <br>
+   <br>
+   {% crispy form form.helper %}
+   <br>
+   * indicates mandatory field
+   
+</body>
+ 
+{% endblock %}
